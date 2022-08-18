@@ -1,0 +1,11 @@
+{
+  "workbench.colorTheme": "Default Light+",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "git.ignoreMissingGitWarning": true,
+  "prettier.arrowParens": "always",
+  "formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"]
+}
