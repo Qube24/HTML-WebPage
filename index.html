@@ -4,42 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Studio</title>
   </head>
   <body>
     <header>
-      <a href="https://kotandrzej24.github.io/goit-markup-hw-02/">WebStudio</a>
+      <a class="logo" href="index.html"><span class="web">Web</span>Studio</a>
       <nav>
         <ul>
           <li>
-            <a href="https://kotandrzej24.github.io/goit-markup-hw-02/">Agencja</a>
+            <a class="link" href="index.html">Agencja</a>
           </li>
           <li>
-            <a href="portfolio.html">Portfolio</a>
+            <a class="link" href="portfolio.html">Portfolio</a>
           </li>
           <li>
-            <a href="https://kotandrzej24.github.io/goit-markup-hw-02/">Kontakt</a>
+            <a class="link" href="index.html">Kontakt</a>
           </li>
         </ul>
       </nav>
       <ul>
         <li>
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="mail-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+48111111111">+48 111 111 111</a>
+          <a class="mail-tel" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
     </header>
 
     <main>
       <section>
-        <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button">Zamów usługę</button>
+        <h1 class="header">
+          EFEKTYWNE ROZWIĄZANIA <br />
+          DLA WASZEGO BIZNESU
+        </h1>
+        <button class="button" type="button">Zamów usługę</button>
       </section>
 
       <section>
-        <ul>
+        <ul class="description">
           <li>
             <h3>LOREM IPSUM</h3>
             <p>
@@ -72,7 +85,7 @@
       </section>
 
       <section>
-        <h2>Czym się zajmujemy</h2>
+        <h2 class="header-two">Czym się zajmujemy</h2>
         <ul>
           <li>
             <img src="images/img1.jpg" width="370" height="294" alt="łapki na klawiaturze" />
@@ -81,47 +94,63 @@
             <img src="images/img2.jpg" width="370" height="294" alt="łapki na klawiaturze i telefonie" />
           </li>
           <li>
-            <img src="images/img3.jpg" width="370" height="94" alt="łapki na tablecie" />
+            <img src="images/img3.jpg" width="370" height="294" alt="łapki na tablecie" />
           </li>
         </ul>
       </section>
       <section>
-        <h2>Nasz zespół</h2>
+        <h2 class="header-two">Nasz zespół</h2>
         <ul>
           <li>
-            <img src="images/jd1.jpg" width="270" height="260" alt="Pan w okularach" />
-            <h3>John Doe</h3>
-            <p>Product Designer</p>
+            <figure>
+              <img src="images/jd1.jpg" width="270" height="260" alt="Pan w okularach" />
+              <figcaption class="team">
+                John Doe
+                <pre>Product Designer</pre>
+              </figcaption>
+            </figure>
           </li>
           <li>
-            <img src="images/jd2.jpg" width="270" height="260" alt="Pani w okularach" />
-            <h3>John Doe</h3>
-            <p>Frontend Developer</p>
+            <figure>
+              <img src="images/jd2.jpg" width="270" height="260" alt="Pani w okularach" />
+              <figcaption class="team">
+                John Doe
+                <pre>Frontend Developer</pre>
+              </figcaption>
+            </figure>
           </li>
           <li>
-            <img src="images/jd3.jpg" width="270" height="260" alt="Pan bez okularów" />
-            <h3>John Doe</h3>
-            <p>Marketing</p>
+            <figure>
+              <img src="images/jd3.jpg" width="270" height="260" alt="Pan bez okularów" />
+              <figcaption class="team">
+                John Doe
+                <pre>Marketing</pre>
+              </figcaption>
+            </figure>
           </li>
           <li>
-            <img src="images/jd4.jpg" width="270" height="260" alt="Daniel Ricardo w okularach" />
-            <h3>John Doe</h3>
-            <p>UI Designer</p>
+            <figure>
+              <img src="images/jd4.jpg" width="270" height="260" alt="Daniel Ricardo w okularach" />
+              <figcaption class="team">
+                John Doe
+                <pre>UI Designer</pre>
+              </figcaption>
+            </figure>
           </li>
         </ul>
       </section>
     </main>
 
     <footer>
-      <a href="https://kotandrzej24.github.io/goit-markup-hw-02/">WebStudio</a>
-      <p><i>m. Warszawa, Aleje Jerozolimskie 21</i></p>
+      <a class="logo" href="index.html"><span class="web">Web</span>Studio</a>
+      <p class="address">m. Warszawa, Aleje Jerozolimskie 21</p>
       <address>
         <ul>
           <li>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a class="mail-tel" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
           <li>
-            <a href="tel:+48111111111">+48 111 111 111</a>
+            <a class="mail-tel" href="tel:+48111111111">+48 111 111 111</a>
           </li>
         </ul>
       </address>

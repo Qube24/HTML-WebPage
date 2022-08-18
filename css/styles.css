@@ -1,0 +1,199 @@
+:root {
+  --text-color: #757575;
+  --header-color: #212121;
+}
+
+body {
+  font-family: "Roboto", "arial" sans-serif;
+  color: #757575;
+  font-weight: 400;
+}
+
+.header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  color: #ffffff;
+  background-color: #2f303a;
+  line-height: 1.364;
+}
+
+.description {
+  color: var(--header-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1428571428571428;
+}
+
+.description p {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 0.03em;
+  line-height: 1.71;
+}
+
+.header-two {
+  color: var(--header-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166666666666667;
+}
+
+.team {
+  color: var(--header-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
+.team > pre {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+
+.button-portfolio {
+  background-color: #ffffff;
+  padding: 19px 60px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #2196f3;
+  color: #ffffff;
+  padding: 18px 35px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.button:hover,
+.button:focus {
+  cursor: pointer;
+}
+
+.link {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: var(--header-color);
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.link:hover,
+.link:focus {
+  color: #2196f3;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+  line-height: 1.193;
+}
+
+.web {
+  color: #2196f3;
+}
+
+.mail-tel {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 1.2;
+}
+
+.mail-tel:hover,
+.mail-tel:focus {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.address {
+  font-family: "Roboto", sans-serif;
+  font-size: 14 px;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+
+.photo-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  color: var(--header-color);
+  font-size: 18 px;
+  line-height: 2;
+}
+
+.photo-description > pre {
+  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
+    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
