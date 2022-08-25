@@ -1,87 +1,107 @@
 :root {
   --text-color: #757575;
   --header-color: #212121;
+  --selection-color: #2196f3;
+  --background-color: #2f303a;
 }
 
 body {
-  font-family: "Roboto", "arial" sans-serif;
-  color: #757575;
-  font-weight: 400;
+  font-family: "Roboto", "Raleway", "arial", sans-serif;
+  color: var(--text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+footer {
+  background-color: var(--background-color);
 }
 
 .header {
-  font-family: "Roboto", sans-serif;
+  width: 1600px;
+  height: 600px;
+  text-align: center;
   font-weight: 900;
   font-size: 48px;
   color: #ffffff;
-  background-color: #2f303a;
-  line-height: 1.364;
+  background-color: var(--background-color);
+  line-height: 1.36;
 }
 
 .description {
   color: var(--header-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1.1428571428571428;
-}
-
-.description p {
-  font-family: "Roboto", sans-serif;
-  color: var(--text-color);
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 0.03em;
   line-height: 1.71;
 }
 
-.header-two {
-  color: var(--header-color);
-  font-family: "Roboto", sans-serif;
+.description p {
+  color: var(--text-color);
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.description h2 {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166666666666667;
+  color: var(--header-color);
 }
 
 .team {
   color: var(--header-color);
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.1875;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
 }
 
-.team > pre {
-  color: var(--text-color);
-  font-family: "Roboto", sans-serif;
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--header-color);
+  line-height: 1.19;
+}
+
+.team-name > pre {
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.1875;
+  color: var(--text-color);
+  line-height: 1.19;
 }
 
 .button-portfolio {
+  font-family: "Roboto";
   background-color: #ffffff;
-  padding: 19px 60px;
+  border-radius: 4px;
   text-align: center;
-  font-size: 20px;
-  line-height: 26px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  width: 121px;
+  height: 38px;
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus {
-  background-color: #2196f3;
+  background-color: var(--selection-color);
   color: #ffffff;
   cursor: pointer;
 }
 
 .button {
-  background-color: #2196f3;
+  background-color: var(--selection-color);
   color: #ffffff;
-  padding: 18px 35px;
+  width: 200px;
+  height: 50px;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-size: 16px;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  line-height: 1.14;
 }
 
 .button:hover,
@@ -90,54 +110,78 @@ body {
 }
 
 .link {
-  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: var(--header-color);
+  font-weight: 500;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
+}
+
+.link-current {
+  color: var(--selection-color);
 }
 
 .link:hover,
 .link:focus {
-  color: #2196f3;
+  color: var(--selection-color);
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
   text-decoration: none;
   font-size: 26px;
-  font-weight: bold;
-  color: black;
-  line-height: 1.193;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.19;
 }
-
+.logo-footer {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.19;
+}
 .web {
-  color: #2196f3;
+  color: var(--selection-color);
 }
 
 .mail-tel {
-  font-family: "Roboto", sans-serif;
   color: var(--text-color);
-  font-size: 14px;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.2;
 }
 
 .mail-tel:hover,
 .mail-tel:focus {
-  color: #2196f3;
+  color: var(--selection-color);
+  cursor: pointer;
+}
+
+.mail-tel-footer {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.2;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mail-tel-footer:hover,
+.mail-tel-footer:focus {
+  color: var(--selection-color);
   cursor: pointer;
 }
 
 .address {
-  font-family: "Roboto", sans-serif;
   font-size: 14 px;
   color: #ffffff;
-  background-color: #2f303a;
+  font-style: normal;
+  line-height: 1.71;
 }
 
 .photo-description {
-  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: var(--header-color);
   font-size: 18 px;
@@ -145,8 +189,8 @@ body {
 }
 
 .photo-description > pre {
+  font-family: "Roboto";
   font-weight: normal;
-  font-family: "Roboto", sans-serif;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
