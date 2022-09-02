@@ -32,6 +32,8 @@ img {
   margin: 0 auto;
 }
 
+/***************** HEADER *****************/
+
 .page-header {
   display: flex;
   align-items: center;
@@ -80,7 +82,7 @@ img {
   fill: var(--selection-color);
 }
 
-/***************** HEADER *****************/
+/***************** ORDER-HEADER *****************/
 
 .header {
   width: 100%;
@@ -121,6 +123,8 @@ img {
 .button:focus {
   cursor: pointer;
 }
+
+/***************** OUR ADVANTAGES *****************/
 
 .icon-description {
   display: flex;
@@ -176,6 +180,8 @@ img {
   margin: 0px;
 }
 
+/***************** OUR JOB *****************/
+
 .our-job {
   font-weight: 700;
   font-size: 36px;
@@ -190,6 +196,8 @@ img {
   margin: 0px;
   justify-content: center;
 }
+
+/***************** OUR TEAM *****************/
 
 figure {
   margin: 0px;
@@ -214,10 +222,6 @@ figure {
   gap: 30px;
   margin: 0px;
   justify-content: center;
-}
-
-figure {
-  margin: 0px;
 }
 
 .card-team {
@@ -269,6 +273,8 @@ figure {
   cursor: pointer;
 }
 
+/***************** OUR CUSTOMERS *****************/
+
 .our-costumers {
   font-weight: 700;
   font-size: 36px;
@@ -317,6 +323,8 @@ figure {
 .link:focus {
   color: var(--selection-color);
 }
+
+/***************** FOOTER *****************/
 
 .logo {
   font-family: "Raleway";
@@ -389,7 +397,7 @@ footer {
   margin-bottom: 20px;
 }
 
-/*           PORTFOLIO                     */
+/***************** PORTFOLIO *****************/
 
 .button-filter {
   display: flex;
@@ -451,50 +459,4 @@ footer {
   line-height: 1.88;
   margin: 0px;
   padding-top: 4px;
-}
-
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: block;
-  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptug8zYS_SKggPNyC0ITw.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
-    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
-    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-display: block;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
-    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-display: block;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
-    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-display: block;
-  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmYUtfBBc4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074,
-    U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
