@@ -62,7 +62,7 @@
           DLA WASZEGO BIZNESU
         </h1>
 
-        <button class="button" type="button">Zamów usługę</button>
+        <button class="button" type="button" data-modal-open>Zamów usługę</button>
       </section>
 
       <section class="section container">
@@ -75,7 +75,7 @@
           <div class="group-1">
             <svg width="70" height="70"><use href="./images/icon.svg#icon-clock-1"></use></svg>
           </div>
-          <div class="group-1 shadow">
+          <div class="group-1">
             <svg width="70" height="70"><use href="./images/icon.svg#icon-diagram-1"></use></svg>
           </div>
           <div class="group-1">
@@ -114,14 +114,17 @@
         </ul>
         <h2 class="our-job">Czym się zajmujemy</h2>
         <ul class="photo">
-          <li>
-            <img src="images/img1.jpg" width="370" height="294" alt="łapki na klawiaturze" />
+          <li class="img-job-box">
+            <img src="images/img3.jpg" width="370" height="294" alt="łapki na klawiaturze" />
+            <p class="img-job">aplikacje komputerowe</p>
           </li>
-          <li>
-            <img src="images/img2.jpg" width="370" height="294" alt="łapki na klawiaturze i telefonie" />
+          <li class="img-job-box">
+            <img src="images/img1.jpg" width="370" height="294" alt="łapki na klawiaturze i telefonie" />
+            <p class="img-job">aplikacje mobilne</p>
           </li>
-          <li>
-            <img src="images/img3.jpg" width="370" height="294" alt="łapki na tablecie" />
+          <li class="img-job-box">
+            <img src="images/img2.jpg" width="370" height="294" alt="łapki na tablecie" />
+            <p class="img-job">rozwiązania graficzne</p>
           </li>
         </ul>
       </section>
@@ -227,24 +230,24 @@
       </section>
       <section class="section">
         <div class="container">
-          <h2 class="our-costumers">Nasi klienci</h2>
-          <div class="costumers-flex">
-            <svg class="costumers">
+          <h2 class="our-customers">Nasi klienci</h2>
+          <div class="customers-flex">
+            <svg class="customers">
               <use width="106" height="60.04" x="32" y="16" href="./images/icon.svg#icon-Logo-5"></use>
             </svg>
-            <svg class="costumers">
+            <svg class="customers">
               <use width="106" height="60.04" x="32" y="16" href="./images/icon.svg#icon-Logo"></use>
             </svg>
-            <svg class="costumers">
+            <svg class="customers">
               <use width="106" height="60.04" x="32" y="16" href="./images/icon.svg#icon-Logo-1"></use>
             </svg>
-            <svg class="costumers">
+            <svg class="customers">
               <use width="106" height="60.04" x="32" y="16" href="./images/icon.svg#icon-Logo-2"></use>
             </svg>
-            <svg class="costumers">
+            <svg class="customers">
               <use width="106" height="60.04" x="32" y="16" href="./images/icon.svg#icon-Logo-3"></use>
             </svg>
-            <svg class="costumers">
+            <svg class="customers">
               <use width="106" height="60.04" x="32" y="16" href="./images/icon.svg#icon-Logo-4"></use>
             </svg>
           </div>
@@ -287,5 +290,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="x" data-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
   </body>
 </html>
