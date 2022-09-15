@@ -298,15 +298,25 @@
       <div class="modal">
         <button type="button" class="x" data-modal-close>X</button>
         <h4 class="form-text">Zostaw swoje dane w formularzu poniżej</h4>
-
       <form>
         <div class="form">
-          <label for="name">Imie</label><input type="text" name="name" id="name"/>
-          <label for="tel">Telefon</label><input type="tel" name="tel" id="tel"/>
-          <label for="email">Email</label><input type="email" name="email" id="email"/>
-          <label for="comment">Komentarz</label><textarea name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
+          <label class="name" for="name"> 
+            <svg class="form-icon"><use href="./images/icon.svg#person"></use></svg>
+            Imie</label><input type="text" name="name" id="name"/>
+          <label class="tel" for="tel">
+            <svg class="form-icon1"><use href="./images/icon.svg#phone"></use></svg>
+            Telefon</label><input type="tel" name="tel" id="tel"/>
+          <label class="email" for="email">
+            <svg class="form-icon2"><use href="./images/icon.svg#envelope"></use></svg>
+            Email</label><input type="email" name="email" id="email"/>
+          <label class="comment-label" for="comment">
+            Komentarz</label><textarea class="comment" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
         </div>
-
+        <div class="statute"><label class="statute-check">
+          <input type="checkbox" name="statute"><svg class="check"><use href="./images/icon.svg#check"></use></svg>
+          Oświadczam iż akceptuję <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">Regulamin</a> i <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noreferrer noopener">Politykę Prywatności.</a></label>
+        </div>      
+        <button class="send" type="submit">Wyślij</button>
       </form>
       </div>
     </div>

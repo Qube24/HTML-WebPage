@@ -617,16 +617,190 @@ footer {
   color: #212121;
   padding: 0px;
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .form {
-  width: 448px;
-  height: 342px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  margin: 0px 40px;
+}
+
+.form input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  height: 40px;
+  padding-left: 42px;
+}
+
+.form textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: #000000;
+}
+
+.form input:focus-within {
+  border-color: var(--selection-color);
+}
+
+.form-icon {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 0px;
+  top: 31px;
+  left: 12px;
+}
+
+.form-icon1 {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  margin: 0px;
+  top: 42px;
+  left: 12px;
+}
+
+.form-icon2 {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  margin: 0px;
+  top: 42px;
+  left: 11px;
+}
+
+.name {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-top: 0px;
+  padding-bottom: 4px;
+}
+.tel {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.email {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.comment-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding: 12px 16px;
+}
+
+.statute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.statute-check {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
+.statute-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.check {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  fill: #ffffff;
+  border: 1px solid var(--selection-color);
+  background-color: #ffffff);
+  border-radius: 2px;
+  left: -24px;
+  top: 4px;
+}
+
+.statute-check:hover input ~ .check {
+  background-color: var(--selection-color);;
+}
+
+.statute-check input:checked ~ .check {
+  background-color: var(--selection-color);
+}
+
+.statute a {
+  color: var(--selection-color);
+  text-decoration: underline;
+}
+
+.send {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-self: flex-end;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: none;
+  gap: 24px;
+  margin: 30px 164px;
+  padding: 0px;
+}
+
+.send:hover {
+  cursor: pointer;
 }
 
 .is-hidden {
