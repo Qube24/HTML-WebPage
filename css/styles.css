@@ -627,87 +627,60 @@ footer {
   margin: 0px 40px;
 }
 
+.form label {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
 .form input {
+  position: relative;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  width: 448px;
   height: 40px;
   padding-left: 42px;
-}
-
-.form textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  color: #000000;
-}
-
-.form input:focus-within {
-  border-color: var(--selection-color);
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .form-icon {
   position: absolute;
   width: 12px;
   height: 12px;
-  margin: 0px;
-  top: 31px;
-  left: 12px;
+  left: 15px;
+  top: 32px;
 }
 
-.form-icon1 {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  margin: 0px;
-  top: 42px;
-  left: 12px;
+.form input:focus {
+  border-color: var(--selection-color);
+  outline: none;
 }
 
-.form-icon2 {
-  position: absolute;
-  width: 15px;
-  height: 12px;
-  margin: 0px;
-  top: 42px;
-  left: 11px;
+.form input:focus + .form-icon {
+  fill: var(--selection-color);
 }
 
-.name {
-  position: relative;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  padding-top: 0px;
-  padding-bottom: 4px;
+.form input:focus-within {
+  border-color: var(--selection-color);
 }
-.tel {
-  position: relative;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  padding-top: 10px;
-  padding-bottom: 4px;
+
+.form textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  color: #000000;
+  outline: none;
 }
-.email {
-  position: relative;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: #757575;
-  padding-top: 10px;
-  padding-bottom: 4px;
-}
+
 .comment-label {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: #757575;
-  padding-top: 10px;
   padding-bottom: 4px;
 }
 
@@ -740,10 +713,10 @@ footer {
   -ms-user-select: none;
   user-select: none;
   font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .statute-check input {
@@ -752,6 +725,8 @@ color: #757575;
   cursor: pointer;
   height: 0;
   width: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .check {
@@ -760,14 +735,14 @@ color: #757575;
   height: 15px;
   fill: #ffffff;
   border: 1px solid var(--selection-color);
-  background-color: #ffffff);
+  background-color: #ffffff;
   border-radius: 2px;
   left: -24px;
   top: 4px;
 }
 
 .statute-check:hover input ~ .check {
-  background-color: var(--selection-color);;
+  background-color: var(--selection-color);
 }
 
 .statute-check input:checked ~ .check {
