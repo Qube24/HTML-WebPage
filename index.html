@@ -300,16 +300,16 @@
         <h4 class="form-text">Zostaw swoje dane w formularzu poniżej</h4>
       <form>
         <div class="form">
-          <label class="name">Imię
-          <input type="text" name="name"/>
+          <label>Imię
+          <input type="text" name="name" required/>
           <svg class="form-icon"><use href="./images/icon.svg#person"></use></svg>
           </label>
-          <label class="tel">Telefon
-          <input type="tel" name="tel"/>
+          <label>Telefon
+          <input type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required />
           <svg class="form-icon"><use href="./images/icon.svg#phone"></use></svg>
           </label>
-          <label class="email">Email
-          <input type="email" name="email" id="email"/>
+          <label>Email
+          <input type="email" name="email" id="email" required/>
           <svg class="form-icon"><use href="./images/icon.svg#envelope"></use></svg>
           </label>
           <label class="comment-label" for="comment">Komentarz

@@ -741,10 +741,6 @@ footer {
   top: 4px;
 }
 
-.statute-check:hover input ~ .check {
-  background-color: var(--selection-color);
-}
-
 .statute-check input:checked ~ .check {
   background-color: var(--selection-color);
 }
