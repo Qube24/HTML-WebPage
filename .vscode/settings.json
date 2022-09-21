@@ -6,6 +6,9 @@
   "files.autoSaveDelay": 3000,
   "liveServer.settings.donotShowInfoMsg": true,
   "git.ignoreMissingGitWarning": true,
-  "prettier.arrowParens": "always",
-  "formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"]
+  "formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"],
+  "prettier.printWidth": 110,
+  "editor.fontSize": 16,
+  "editor.minimap.enabled": false,
+  "liveSassCompile.settings.showAnnouncements": null
 }
