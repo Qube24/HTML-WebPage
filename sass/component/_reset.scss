@@ -1,0 +1,25 @@
+/***************** BODY *****************/
+
+body {
+  font-family: "Roboto", "Raleway", "arial", sans-serif;
+  color: getColor(text);
+  width: 1600px;
+  margin: 0px auto;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+figure {
+  margin: 0px;
+}
+.section {
+  padding: 94px 0px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}

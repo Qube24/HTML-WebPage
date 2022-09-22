@@ -1,0 +1,49 @@
+$colors: (
+  "primary": #2196f3,
+  "secondary": #212121,
+  "background": #2f303a,
+  "background-second": #f5f4fa,
+  "text": #757575,
+  "icons": #afb1b8,
+  "black": #000000,
+  "white": #ffffff,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$fonts-size: (
+  "mini": 12px,
+  "normal": 14px,
+  "normal2": 16px,
+  "gallery": 18px,
+  "logo": 26px,
+  "heading": 36px,
+  "big": 44px,
+  "modal": 20px,
+);
+@function getFs($key) {
+  @return map-get($fonts-size, $key);
+}
+
+$fonts-weight: (
+  "normal": 400,
+  "normal-5": 500,
+  "bold": 700,
+  "big": 900,
+);
+@function getFw($key) {
+  @return map-get($fonts-weight, $key);
+}
+
+$fonts-family: (
+  "roboto": Roboto,
+  "raleway": Raleway,
+);
+@function getFf($key) {
+  @return map-get($fonts-family, $key);
+}
+
+%transition {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -6,9 +6,24 @@
   "files.autoSaveDelay": 3000,
   "liveServer.settings.donotShowInfoMsg": true,
   "git.ignoreMissingGitWarning": true,
+  "prettier.arrowParens": "always",
   "formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"],
   "prettier.printWidth": 110,
   "editor.fontSize": 16,
-  "editor.minimap.enabled": false,
-  "liveSassCompile.settings.showAnnouncements": null
+  "editor.minimap.enabled": true,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveSassCompile.settings.excludeList": ["/**/node_modules/**"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    },
+    {
+      "extensionName": ".min.css",
+      "format": "compressed",
+      "savePath": "~/../css"
+    }
+  ]
 }

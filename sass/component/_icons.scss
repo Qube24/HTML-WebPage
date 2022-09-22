@@ -1,0 +1,38 @@
+/***************** ICONS *****************/
+.icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+
+  &--white {
+    width: 44px;
+    height: 44px;
+    background-color: getColor("white");
+    border-radius: 50%;
+    fill: getColor(icons);
+    &:hover,
+    &:focus {
+      fill: white;
+      background-color: getColor(primary);
+      cursor: pointer;
+      @extend %transition;
+    }
+  }
+
+  &--black {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    fill: getColor(icons);
+    &:hover,
+    &:focus {
+      fill: getColor(background-second);
+      background-color: getColor(primary);
+      cursor: pointer;
+      @extend %transition;
+    }
+  }
+}

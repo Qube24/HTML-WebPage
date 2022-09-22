@@ -1,0 +1,16 @@
+@import "../utils/variables";
+/***************** LOGO *****************/
+.logo {
+  font-family: getFf(raleway);
+  font-size: getFs(logo);
+  font-weight: getFw(bold);
+  text-decoration: none;
+  line-height: 1.19;
+  color: getColor(primary);
+  &--black {
+    color: getColor("black");
+  }
+  &--white {
+    color: getColor("white");
+  }
+}
