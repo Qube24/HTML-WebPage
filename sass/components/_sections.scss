@@ -1,4 +1,10 @@
 /***************** ORDER-HEADER *****************/
+@mixin box() {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
 
 .order {
   width: 100%;
@@ -20,8 +26,7 @@
 /***************** OUR ADVANTAGES *****************/
 
 .description {
-  display: flex;
-  gap: 30px;
+  @include box;
   margin: 0px 15px 0px;
   padding-bottom: 94px;
   &__icon {
@@ -53,10 +58,8 @@
 /***************** OUR JOB *****************/
 
 .our-job {
-  display: flex;
-  gap: 30px;
+  @include box;
   margin: 0px;
-  justify-content: center;
   &__box {
     display: flex;
     position: relative;
@@ -82,10 +85,8 @@
   background-color: getColor(background-second);
 }
 .team {
-  display: flex;
-  gap: 30px;
+  @include box;
   margin: 0px;
-  justify-content: center;
   &__card {
     background: getColor("white");
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -111,10 +112,7 @@
 }
 /***************** OUR CUSTOMERS *****************/
 .customers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  @include box;
   &__icon {
     width: 170px;
     height: 92px;

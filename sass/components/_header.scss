@@ -1,16 +1,19 @@
 @import "../utils/variables";
 /***************** HEADER*****************/
-.header {
+@mixin box() {
   display: flex;
   align-items: center;
+}
+
+.header {
+  @include box;
   gap: 93px;
   justify-content: space-between;
   margin: 0px 227px 0px 215px;
   padding: 24px 0px 25px;
   border-bottom: 1px solid #ececec;
   &__menu {
-    display: flex;
-    align-items: center;
+    @include box;
     gap: 46px;
     margin: 0;
   }
@@ -43,20 +46,18 @@
   }
 }
 .contact {
-  display: flex;
-  align-items: center;
+  @include box;
   padding-left: 252px;
   column-gap: 30px;
   margin: 0;
   &__mail-tel {
-    display: flex;
+    @include box;
     color: getColor(text);
     font-weight: getFw(normal-5);
     font-size: getFs(normal);
     text-decoration: none;
     line-height: 1.2;
     fill: getColor(text);
-    align-items: center;
     gap: 10px;
     &:hover,
     &:focus {
