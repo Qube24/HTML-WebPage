@@ -309,7 +309,6 @@ figure {
   padding-bottom: 94px;
 }
 .description__icon {
-  text-align: center;
   margin: 0;
   padding-top: 25px;
   width: 270px;
@@ -317,15 +316,16 @@ figure {
   background-color: #f5f4fa;
 }
 .description__heading {
+  text-align: left;
   color: var(secondary);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  margin: 0px;
   padding-bottom: 10px;
   margin-top: 30px;
 }
 .description__text {
+  text-align: left;
   color: #757575;
   font-size: 14px;
   font-weight: 400;

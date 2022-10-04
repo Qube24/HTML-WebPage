@@ -30,7 +30,6 @@
   margin: 0px 15px 0px;
   padding-bottom: 94px;
   &__icon {
-    text-align: center;
     margin: 0;
     padding-top: 25px;
     width: 270px;
@@ -38,15 +37,17 @@
     background-color: getColor(background-second);
   }
   &__heading {
+    text-align: left;
     color: var(secondary);
     font-weight: getFw(bold);
     font-size: getFs(normal);
     line-height: 1.14;
-    margin: 0px;
+
     padding-bottom: 10px;
     margin-top: 30px;
   }
   &__text {
+    text-align: left;
     color: getColor(text);
     font-size: getFs(normal);
     font-weight: getFw(normal);
