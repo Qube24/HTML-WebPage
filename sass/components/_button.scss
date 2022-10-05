@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-end;
+  align-self: center;
   border: none;
   gap: 24px;
   margin: 0px;
@@ -39,6 +39,21 @@
   }
 }
 
+// .footer__btn {
+//   @extend %button;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   align-self: flex-end;
+//   border: none;
+//   gap: 24px;
+//   margin: 0px;
+//   padding: 0px;
+//   &:hover,
+//   &:focus {
+//     cursor: pointer;
+//   }
+// }
 /***************** BTN PORTFOLIO *****************/
 
 .filter__btn {
