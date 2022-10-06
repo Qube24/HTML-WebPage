@@ -9,10 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Portfolio</title>
@@ -24,10 +21,10 @@
       <nav>
         <ul class="header__menu">
           <li>
-            <a class="header__link" href="./index.html">Agencja</a>
+            <a class="header__link header__link--current" href="./index.html">Agencja</a>
           </li>
           <li>
-            <a class="header__link header__link--current" href="./portfolio.html">Portfolio</a>
+            <a class="header__link" href="./portfolio.html">Portfolio</a>
           </li>
           <li>
             <a class="header__link" href="./index.html">Kontakt</a>
@@ -52,6 +49,9 @@
           >
         </li>
       </ul>
+      <button class="js-open-menu menu-open" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <svg><use width="40" height="40" href="./images/icon.svg#menu"></use></svg>
+      </button>
     </header>
     <main>
       <section class="container section">
@@ -77,11 +77,14 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/technocrack.jpg" width="370" height="294" alt="laptop" />
+                <img
+                  src="images/technocrack.jpg"
+                  srcset="images/Mobile/TechnocrackMobile.png 1x, images/Mobile/TechnocrackMobile@2x.png 2x"
+                  alt="laptop"
+                />
                 <p class="gallery__overlay--visible">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
-                  wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery
-                  konkurencji
+                  wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -93,11 +96,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/grafika.jpg" width="370" height="294" alt="koszykarze" />
+                <img
+                  src="images/grafika.jpg"
+                  srcset="images/Mobile/GrafikaMobile.png 1x, images/Mobile/GrafikaMobile@2x.png 2x"
+                  alt="koszykarze"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -109,11 +116,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/restauracja.jpg" width="370" height="294" alt="logo restauracji" />
+                <img
+                  src="images/restauracja.jpg"
+                  srcset="images/Mobile/RestauracjaMobile.png 1x, images/Mobile/RestauracjaMobile@2x.png 2x"
+                  alt="logo restauracji"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -125,11 +136,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/prime.jpg" width="370" height="294" alt="słuchawki" />
+                <img
+                  src="images/prime.jpg"
+                  srcset="images/Mobile/PrimeMobile.png 1x, images/Mobile/PrimeMobile@2x.png 2x"
+                  alt="słuchawki"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!i
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!i
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -141,11 +156,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/boxes.jpg" width="370" height="294" alt="pudełka" />
+                <img
+                  src="images/boxes.jpg"
+                  srcset="images/Mobile/BoxesMobile.png 1x, images/Mobile/BoxesMobile@2x.png 2x"
+                  alt="pudełka"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -157,11 +176,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/inspiration.jpg" width="370" height="294" alt="monitor" />
+                <img
+                  src="images/inspiration.jpg"
+                  srcset="images/Mobile/InspirationMobile.png 1x, images/Mobile/InspirationMobile@2x.png 2x"
+                  alt="monitor"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -173,11 +196,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/magazyn.jpg" width="370" height="294" alt="ksiażka" />
+                <img
+                  src="images/magazyn.jpg"
+                  srcset="images/Mobile/MagazynMobile.png 1x, images/Mobile/MagazynMobile@2x.png 2x"
+                  alt="ksiażka"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -189,11 +216,11 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/lab.jpg" width="370" height="294" alt="metka" />
+                <img src="images/lab.jpg" srcset="images/Mobile/Lab.png 1x, images/Mobile/Lab@2x.png 2x" alt="metka" />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -205,11 +232,15 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/growing.jpg" width="370" height="294" alt="łapki na laptopie" />
+                <img
+                  src="images/growing.jpg"
+                  srcset="images/Mobile/GrowingMobile.png 1x, images/Mobile/GrowingMobile@2x.png 2x"
+                  alt="łapki na laptopie"
+                />
                 <p class="gallery__overlay--visible">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia
-                  suscipit hic incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis
-                  quidem enim similique, tempore pariatur soluta!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
+                  incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
+                  tempore pariatur soluta!
                 </p>
               </div>
               <figcaption class="gallery__description">
@@ -223,8 +254,8 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer__box">
-        <div>
+      <div class="container footer__main">
+        <div class="footer__box">
           <a class="logo" href="index.html">Web<span class="logo--white">Studio</span></a>
           <ul class="footer__info">
             <li>
@@ -258,15 +289,53 @@
         <form>
           <div class="footer__newsletter">
             <label
-              ><h4 class="footer__join">zapisz się do newslettera</h4>
+              ><p class="footer__join">zapisz się do newslettera</p>
               <input class="footer__input" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button class="footer__btn" type="submit">
-              Zapisz się <svg class="footer__svg"><use href="./images/icon.svg#fly"></use></svg>
-            </button>
+            <div class="footer__btn--flex">
+              <button class="footer__btn" type="submit">
+                Zapisz się <svg class="footer__svg"><use href="./images/icon.svg#fly"></use></svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
     </footer>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu__close js-close-menu" type="button">
+        <svg width="36" height="36">
+          <use href="./images/icon.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="menu__mobile">
+        <li><a href="./index.html" class="link">Agencja</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="./index.html" class="link">Kontakt</a></li>
+      </ul>
+      <ul class="menu__mail-tel">
+        <li><a class="menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
+        <li><a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <div class="menu__social">
+        <a class="menu__link" href="https://www.instagram.com/" class="link"
+          >Instagram<span class="menu__separator"> </span>
+        </a>
+        <a class="menu__link" href="https://twitter.com/?lang=pl" class="link"
+          >Twitter<span class="menu__separator"> </span
+        ></a>
+        <a class="menu__link" href="https://www.facebook.com/" class="link"
+          >Facebook<span class="menu__separator"> </span
+        ></a>
+        <a class="menu__link" href="https://pl.linkedin.com/" class="link">Linkedin</a>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/mobile-menu.js"></script>
   </body>
 </html>

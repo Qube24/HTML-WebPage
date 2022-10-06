@@ -8,7 +8,7 @@
   "git.ignoreMissingGitWarning": true,
   "prettier.arrowParens": "always",
   "formattingToggle.affects": ["editor.formatOnPaste", "editor.formatOnSave", "editor.formatOnType"],
-  "prettier.printWidth": 110,
+  "prettier.printWidth": 120,
   "editor.fontSize": 16,
   "editor.minimap.enabled": false,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],

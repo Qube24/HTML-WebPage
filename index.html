@@ -9,10 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Studio</title>
@@ -34,7 +31,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contact none">
+      <ul class="contact">
         <li>
           <a class="contact__mail-tel" href="mailto:info@devstudio.com">
             <svg width="16" height="12">
@@ -52,8 +49,8 @@
           >
         </li>
       </ul>
-      <button class="js-open-menu none" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="menu-btn" width="40" height="40"><use href="./images/icon.svg#menu"></use></svg>
+      <button class="js-open-menu menu-open" aria-expanded="false" aria-controls="mobile-menu" type="button">
+        <svg><use width="40" height="40" href="./images/icon.svg#menu"></use></svg>
       </button>
     </header>
     <main>
@@ -74,8 +71,8 @@
             </div>
             <h3 class="description__heading">LOREM IPSUM</h3>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-              Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
             </p>
           </li>
           <li>
@@ -84,8 +81,8 @@
             </div>
             <h3 class="description__heading">LOREM IPSUM</h3>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-              Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
             </p>
           </li>
           <li>
@@ -94,8 +91,8 @@
             </div>
             <h3 class="description__heading">LOREM IPSUM</h3>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-              Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
             </p>
           </li>
           <li>
@@ -104,12 +101,12 @@
             </div>
             <h3 class="description__heading">LOREM IPSUM</h3>
             <p class="description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui.
-              Interdum et malesuada
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non sodales dui. Interdum
+              et malesuada
             </p>
           </li>
         </ul>
-        <h2 class="heading none">Czym się zajmujemy</h2>
+        <h2 class="heading">Czym się zajmujemy</h2>
         <ul class="our-job">
           <li class="our-job__box">
             <img src="images/img3.jpg" width="370" height="294" alt="łapki na klawiaturze" />
@@ -307,9 +304,11 @@
               ><p class="footer__join">zapisz się do newslettera</p>
               <input class="footer__input" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button class="footer__btn" type="submit">
-              Zapisz się <svg class="footer__svg"><use href="./images/icon.svg#fly"></use></svg>
-            </button>
+            <div class="footer__btn--flex">
+              <button class="footer__btn" type="submit">
+                Zapisz się <svg class="footer__svg"><use href="./images/icon.svg#fly"></use></svg>
+              </button>
+            </div>
           </div>
         </form>
       </div>
@@ -328,13 +327,7 @@
             </label>
             <label class="form__label"
               >Telefon
-              <input
-                class="form__input"
-                type="tel"
-                name="phone"
-                pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
-                required
-              />
+              <input class="form__input" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required />
               <svg class="form__icon"><use href="./images/icon.svg#phone"></use></svg>
             </label>
             <label class="form__label"
@@ -343,12 +336,7 @@
               <svg class="form__icon"><use href="./images/icon.svg#envelope"></use></svg>
             </label>
             <label class="form__comment-label" for="comment">Komentarz </label
-            ><textarea
-              class="form__comment"
-              name="comment"
-              id="comment"
-              placeholder="Wprowadź tekst"
-            ></textarea>
+            ><textarea class="form__comment" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
           </div>
           <div class="statute">
             <label class="statute__label">
@@ -379,16 +367,33 @@
         </form>
       </div>
     </div>
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <svg class="menu-toggle js-close-menu">
-        <use href="./images/icon.svg#close-menu"></use>
-      </svg>
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+    <div class="menu js-menu-container" id="mobile-menu">
+      <button class="menu__close js-close-menu" type="button">
+        <svg width="36" height="36">
+          <use href="./images/icon.svg#close-menu"></use>
+        </svg>
+      </button>
+      <ul class="menu__mobile">
+        <li><a href="./index.html" class="link">Agencja</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="./index.html" class="link">Kontakt</a></li>
       </ul>
+      <ul class="menu__mail-tel">
+        <li><a class="menu__tel" href="tel:+48111111111">+48 111 111 111</a></li>
+        <li><a class="menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <div class="menu__social">
+        <a class="menu__link" href="https://www.instagram.com/" class="link"
+          >Instagram<span class="menu__separator"> </span>
+        </a>
+        <a class="menu__link" href="https://twitter.com/?lang=pl" class="link"
+          >Twitter<span class="menu__separator"> </span
+        ></a>
+        <a class="menu__link" href="https://www.facebook.com/" class="link"
+          >Facebook<span class="menu__separator"> </span
+        ></a>
+        <a class="menu__link" href="https://pl.linkedin.com/" class="link">Linkedin</a>
+      </div>
     </div>
     <script src="./modal.js"></script>
     <script

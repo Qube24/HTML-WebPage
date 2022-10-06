@@ -37,6 +37,12 @@
   &:focus {
     cursor: pointer;
   }
+  &--flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 // .footer__btn {
@@ -92,41 +98,29 @@
 }
 
 /***************** BTN MENU *****************/
-.menu-btn:hover,
-:focus {
-  color: getColor(primary);
-  fill: getColor(primary);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.js-open-menu {
-  display: contents;
-  &:hover,
-  :focus {
-    fill: getColor(primary);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
-.js-close-menu {
-  display: contents;
-  outline: none;
+.menu-open {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
   border: none;
   background-color: getColor("white");
   &:hover,
   :focus {
-    color: getColor(primary);
     fill: getColor(primary);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
-.menu-toggle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  outline: none;
+
+.menu__close {
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+  border: none;
+  background-color: getColor("white");
+  padding: 0px;
+  margin: 0px;
   &:hover,
   :focus {
     color: getColor(primary);

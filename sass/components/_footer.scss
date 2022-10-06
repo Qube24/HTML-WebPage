@@ -3,7 +3,7 @@
 .footer {
   background-color: getColor(background);
   padding: 57px 0px 63px;
-
+  min-width: 320px;
   &__main {
     display: flex;
     flex-direction: column;
@@ -54,15 +54,12 @@
     letter-spacing: 0.03em;
   }
   &__newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
     height: 156px;
     width: 100%;
   }
   &__input {
-    min-width: 290px;
+    width: 93.5%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -73,6 +70,7 @@
     font-size: getFs(normal2);
     line-height: 20px;
     padding-left: 16px;
+    margin-left: 15px;
   }
   &__svg {
     width: 24px;
