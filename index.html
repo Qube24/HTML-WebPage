@@ -34,7 +34,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contact">
+      <ul class="contact none">
         <li>
           <a class="contact__mail-tel" href="mailto:info@devstudio.com">
             <svg width="16" height="12">
@@ -52,16 +52,20 @@
           >
         </li>
       </ul>
+      <button class="js-open-menu none" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-btn" width="40" height="40"><use href="./images/icon.svg#menu"></use></svg>
+      </button>
     </header>
     <main>
-      <section class="order container">
-        <h1 class="order__text">
-          EFEKTYWNE ROZWIĄZANIA <br />
-          DLA WASZEGO BIZNESU
-        </h1>
-        <button class="order__button" type="button" data-modal-open>Zamów usługę</button>
-      </section>
-
+      <div class="section">
+        <section class="order container">
+          <h1 class="order__text">
+            EFEKTYWNE ROZWIĄZANIA <br />
+            DLA WASZEGO BIZNESU
+          </h1>
+          <button class="order__button" type="button" data-modal-open>Zamów usługę</button>
+        </section>
+      </div>
       <section class="section container">
         <ul class="description">
           <li>
@@ -105,7 +109,7 @@
             </p>
           </li>
         </ul>
-        <h2 class="heading">Czym się zajmujemy</h2>
+        <h2 class="heading none">Czym się zajmujemy</h2>
         <ul class="our-job">
           <li class="our-job__box">
             <img src="images/img3.jpg" width="370" height="294" alt="łapki na klawiaturze" />
@@ -128,7 +132,11 @@
           <ul class="team">
             <li class="team__card">
               <figure>
-                <img src="images/jd1.jpg" width="270" height="260" alt="Pan w okularach" />
+                <img
+                  src="images/jd1.jpg"
+                  srcset="images/Mobile/JdMobile.jpg 1x, images/Mobile/JdMobile@2x.jpg 2x"
+                  alt="Pan w okularach"
+                />
                 <figcaption class="team__name">
                   John Doe
                   <p class="team__role">Product Designer</p>
@@ -151,7 +159,11 @@
             </li>
             <li class="team__card">
               <figure>
-                <img src="images/jd2.jpg" width="270" height="260" alt="Pani w okularach" />
+                <img
+                  src="images/jd2.jpg"
+                  srcset="images/Mobile/Jd2Mobile.jpg 1x, images/Mobile/Jd2Mobile@2x.jpg 2x"
+                  alt="Pani w okularach"
+                />
                 <figcaption class="team__name">
                   John Doe
                   <p class="team__role">Frontend Developer</p>
@@ -174,7 +186,11 @@
             </li>
             <li class="team__card">
               <figure>
-                <img src="images/jd3.jpg" width="270" height="260" alt="Pan bez okularów" />
+                <img
+                  src="images/jd3.jpg"
+                  srcset="images/Mobile/Jd3Mobile.jpg 1x, images/Mobile/Jd3Mobile@2x.jpg 2x"
+                  alt="Pan bez okularów"
+                />
                 <figcaption class="team__name">
                   John Doe
                   <p class="team__role">Marketing</p>
@@ -197,7 +213,11 @@
             </li>
             <li class="team__card">
               <figure>
-                <img src="images/jd4.jpg" width="270" height="260" alt="Daniel Ricardo w okularach" />
+                <img
+                  src="images/jd4.jpg"
+                  srcset="images/Mobile/Jd4Mobile.jpg 1x, images/Mobile/Jd4Mobile@2x.jpg 2x"
+                  alt="Daniel Ricardo w okularach"
+                />
                 <figcaption class="team__name">
                   John Doe
                   <p class="team__role">UI Designer</p>
@@ -249,8 +269,8 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer__box">
-        <div>
+      <div class="container footer__main">
+        <div class="footer__box">
           <a class="logo" href="index.html">Web<span class="logo--white">Studio</span></a>
           <ul class="footer__info">
             <li>
@@ -353,11 +373,30 @@
                 >Politykę Prywatności.</a
               ></label
             >
+            <button class="statute__send-btn" type="submit">Wyślij</button>
           </div>
-          <button class="modal__send-btn" type="submit">Wyślij</button>
+          <!-- <button class="modal__send-btn" type="submit">Wyślij</button> -->
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <svg class="menu-toggle js-close-menu">
+        <use href="./images/icon.svg#close-menu"></use>
+      </svg>
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
     <script src="./modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/mobile-menu.js"></script>
   </body>
 </html>

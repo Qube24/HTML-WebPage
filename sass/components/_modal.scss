@@ -16,9 +16,9 @@
   pointer-events: none;
 }
 .modal {
-  position: fixed;
-  width: 528px;
-  height: 581px;
+  position: relative;
+  max-width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -43,8 +43,7 @@
     line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
-    padding: 0px;
-    margin-top: 40px;
+    padding: 40px 40px 0;
     margin-bottom: 12px;
   }
 }
@@ -54,6 +53,7 @@
   justify-content: center;
   margin: 0px 40px;
   &__label {
+    max-width: 370px;
     color: getColor(text);
     position: relative;
     font-weight: getFw(normal);
@@ -63,6 +63,7 @@
   }
   &__input {
     position: relative;
+    max-width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 448px;
@@ -90,7 +91,7 @@
   }
   &__comment {
     resize: none;
-    width: 448px;
+    max-width: 100%;
     height: 120px;
     font-weight: getFw(normal);
     font-size: getFs(mini);
@@ -113,15 +114,18 @@
 }
 .statute {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0 0;
+  max-width: 370px;
+  margin: 20px 45px 0;
   padding: 0;
   cursor: pointer;
   &__label {
     position: relative;
+    left: 10px;
+    max-width: 100%;
     font-weight: getFw(normal);
-    font-size: getFs(normal);
+    font-size: getFs(mini);
     line-height: 24px;
     letter-spacing: 0.03em;
     color: getColor(text);
@@ -148,11 +152,207 @@
     border: 1px solid getColor(primary);
     background-color: getColor("white");
     border-radius: 2px;
-    left: -24px;
+    left: -20px;
     top: 4px;
   }
   &__link {
     color: getColor(primary);
     text-decoration: underline;
   }
+}
+
+// .backdrop {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   left: 0px;
+//   top: 0px;
+//   background: rgba(0, 0, 0, 0.2);
+//   transition: opacity 500ms ease-in-out, visibility 500ms ease-in-out;
+//   opacity: 1;
+//   visibility: visible;
+// }
+// .is-hidden {
+//   opacity: 0;
+//   overflow: hidden;
+//   pointer-events: none;
+// }
+// .modal {
+//   position: fixed;
+//   width: 528px;
+//   height: 581px;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background: getColor("white");
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   &__btn-x {
+//     position: absolute;
+//     top: 8px;
+//     right: 8px;
+//     width: 30px;
+//     height: 30px;
+//     background-color: getColor("white");
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     border-radius: 50%;
+//     cursor: pointer;
+//   }
+//   &__text {
+//     color: getColor(secondary);
+//     font-weight: getFw(bold);
+//     font-size: getFs(modal);
+//     line-height: 23px;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     padding: 0px;
+//     margin-top: 40px;
+//     margin-bottom: 12px;
+//   }
+// }
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin: 0px 40px;
+//   &__label {
+//     color: getColor(text);
+//     position: relative;
+//     font-weight: getFw(normal);
+//     font-size: getFs(mini);
+//     line-height: 14px;
+//     letter-spacing: 0.01em;
+//   }
+//   &__input {
+//     position: relative;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     width: 448px;
+//     height: 40px;
+//     padding-left: 42px;
+//     margin-top: 4px;
+//     margin-bottom: 10px;
+//     &:focus {
+//       border-color: getColor(primary);
+//       outline: none;
+//     }
+//     &:focus-within {
+//       border-color: getColor(primary);
+//     }
+//     &:focus + .form__icon {
+//       fill: getColor(primary);
+//     }
+//   }
+//   &__icon {
+//     position: absolute;
+//     width: 12px;
+//     height: 12px;
+//     left: 15px;
+//     top: 32px;
+//   }
+//   &__comment {
+//     resize: none;
+//     width: 448px;
+//     height: 120px;
+//     font-weight: getFw(normal);
+//     font-size: getFs(mini);
+//     line-height: 14px;
+//     letter-spacing: 0.01em;
+//     color: getColor("black");
+//     padding: 12px 16px;
+//     border: 1px solid rgba(33, 33, 33, 0.2);
+//     border-radius: 4px;
+//     outline: none;
+//   }
+//   &__comment-label {
+//     color: getColor(text);
+//     font-weight: getFw(normal);
+//     font-size: getFs(mini);
+//     line-height: 14px;
+//     letter-spacing: 0.01em;
+//     padding-bottom: 4px;
+//   }
+// }
+// .statute {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin: 20px 0 0;
+//   padding: 0;
+//   cursor: pointer;
+//   &__label {
+//     position: relative;
+//     font-weight: getFw(normal);
+//     font-size: getFs(normal);
+//     line-height: 24px;
+//     letter-spacing: 0.03em;
+//     color: getColor(text);
+//     cursor: pointer;
+//     user-select: none;
+//   }
+//   &__input {
+//     position: absolute;
+//     opacity: 0;
+//     height: 0;
+//     width: 0;
+//     padding: 0px;
+//     margin: 0px;
+//     cursor: pointer;
+//   }
+//   &__label &__input:checked ~ &__check {
+//     background-color: getColor(primary);
+//   }
+//   &__check {
+//     position: absolute;
+//     width: 16px;
+//     height: 15px;
+//     fill: getColor("white");
+//     border: 1px solid getColor(primary);
+//     background-color: getColor("white");
+//     border-radius: 2px;
+//     left: -24px;
+//     top: 4px;
+//   }
+//   &__link {
+//     color: getColor(primary);
+//     text-decoration: underline;
+//   }
+// }
+
+/***************** MOBILE MENU *****************/
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }

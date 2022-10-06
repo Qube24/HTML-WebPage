@@ -3,8 +3,24 @@
 body {
   font-family: "Roboto", "Raleway", "arial", sans-serif;
   color: getColor(text);
-  width: 1600px;
+  // width: 480px;
   margin: 0px auto;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-family: "Roboto", "Raleway", "arial", sans-serif;
+    color: getColor(text);
+    width: 768px;
+    margin: 0px auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-family: "Roboto", "Raleway", "arial", sans-serif;
+    color: getColor(text);
+    width: 1600px;
+    margin: 0px auto;
+  }
 }
 ul {
   list-style-type: none;
@@ -12,14 +28,36 @@ ul {
 }
 img {
   display: block;
+  width: 100%;
 }
 figure {
   margin: 0px;
 }
-.section {
-  padding: 94px 0px;
+.none {
+  display: none;
 }
 .container {
-  width: 1200px;
+  max-width: 480px;
+  min-width: 320px;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+.section {
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }

@@ -79,17 +79,58 @@
 }
 
 /***************** BTN MODAL *****************/
-.modal__send-btn {
+.statute__send-btn {
   @extend %button;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-end;
   letter-spacing: 0.06em;
   border: none;
   gap: 24px;
-  margin: 30px 164px;
+  margin-top: 30px;
   padding: 0px;
   &:hover {
     cursor: pointer;
+  }
+}
+
+/***************** BTN MENU *****************/
+.menu-btn:hover,
+:focus {
+  color: getColor(primary);
+  fill: getColor(primary);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.js-open-menu {
+  display: contents;
+  &:hover,
+  :focus {
+    fill: getColor(primary);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.js-close-menu {
+  display: contents;
+  outline: none;
+  border: none;
+  background-color: getColor("white");
+  &:hover,
+  :focus {
+    color: getColor(primary);
+    fill: getColor(primary);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  &:hover,
+  :focus {
+    color: getColor(primary);
+    fill: getColor(primary);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
