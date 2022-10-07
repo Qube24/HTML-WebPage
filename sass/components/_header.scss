@@ -1,6 +1,7 @@
 @import "../utils/variables";
 
-/***************** HEADER*****************/
+/***************** HEADER *****************/
+/***************** MOBILE *****************/
 @mixin box() {
   display: flex;
   align-items: center;
@@ -12,7 +13,7 @@
     justify-content: space-between;
     padding: 10px 15px;
     border-bottom: 1px solid #ececec;
-    max-width: 100%;
+    max-width: 480px;
     &__menu {
       display: none;
     }
@@ -22,20 +23,17 @@
   }
 }
 
+/***************** TABLET *****************/
+
 @media screen and (min-width: 768px) {
   .header {
-    display: flex;
-    align-items: center;
-    gap: 93px;
-    justify-content: space-between;
-    margin: 0px 227px 0px 215px;
-    padding: 24px 0px 25px;
-    border-bottom: 1px solid #ececec;
+    padding: 10px 0px 10px 15px;
+    max-width: 768px;
     &__menu {
       display: flex;
       align-items: center;
-      gap: 46px;
-      margin: 0;
+      gap: 60px;
+      margin: 0 101px 0 83px;
     }
     &__link {
       position: relative;
@@ -67,16 +65,16 @@
   }
   .contact {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding-left: 252px;
-    column-gap: 30px;
-    margin: 0;
+    gap: 10px;
+    margin: 11px 0;
     &__mail-tel {
       display: flex;
       align-items: center;
       color: getColor(text);
       font-weight: getFw(normal-5);
-      font-size: getFs(normal);
+      font-size: getFs(mini);
       text-decoration: none;
       line-height: 1.2;
       fill: getColor(text);

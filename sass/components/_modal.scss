@@ -403,3 +403,14 @@
   right: 16px;
   color: getColor("black");
 }
+
+/***************** TABLET *****************/
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-open {
+    display: none;
+  }
+}

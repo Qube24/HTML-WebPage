@@ -1,11 +1,11 @@
 /***************** ORDER-HEADER *****************/
-
+/***************** MOBILE *****************/
 .order {
   text-align: center;
   height: 400px;
   width: 100%;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-    url("/images/Mobile/WorkMobile.png");
+    url("/images/WorkMobile.png");
   &__text {
     text-align: center;
     font-weight: getFw(big);
@@ -20,10 +20,26 @@
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-      url("/images/Mobile/WorkMobile@2x.png");
+      url("/images/WorkMobile@2x.png");
     background-size: contain;
   }
 }
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .order {
+    background-size: contain;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url("/images/WorkT.jpg");
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .order {
+      background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+        url("/images/WorkT@2x.jpg");
+    }
+  }
+}
+
+/***************** DESKTOP *****************/
 
 // .order {
 //   width: 100%;
@@ -43,6 +59,7 @@
 // }
 
 /***************** OUR ADVANTAGES *****************/
+/***************** MOBILE *****************/
 
 .description {
   display: flex;
@@ -77,6 +94,26 @@
     margin: 0px;
   }
 }
+
+/***************** TABLET *****************/
+
+@media screen and (min-width: 768px) {
+  .description {
+    margin: 0px 15px;
+    &__icon {
+      width: 354px;
+    }
+    &__heading {
+      text-align: left;
+    }
+    &__text {
+      width: 354px;
+      height: 75px;
+    }
+  }
+}
+
+/***************** DESKTOP *****************/
 
 // .description {
 //   display: flex;
@@ -114,58 +151,18 @@
 // }
 
 /***************** OUR JOB *****************/
+/***************** MOBILE *****************/
 @media screen and (min-width: 320px) {
-  .heading {
-    color: getColor(secondary);
-    font-weight: getFw(bold);
-    font-size: getFs(heading);
-    line-height: 1.16;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    margin: 0px;
+  .heading2 {
+    display: none;
   }
   .our-job {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .heading {
-    color: getColor(secondary);
-    font-weight: getFw(bold);
-    font-size: getFs(heading);
-    line-height: 1.16;
-    text-align: center;
-    padding-bottom: 50px;
-    margin: 0px;
-  }
-  .our-job {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 0px;
-    &__box {
-      display: flex;
-      position: relative;
-    }
-    &__text {
-      position: absolute;
-      bottom: 0%;
-      margin: 0;
-      width: 370px;
-      height: 70px;
-      text-align: center;
-      font-weight: getFw(bold);
-      font-size: getFs(normal);
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-      color: getColor("white");
-      background: rgba(47, 48, 58, 0.8);
-      padding-top: 27px;
-    }
-  }
-}
+
+/***************** DESKTOP *****************/
+
 @media screen and (min-width: 1200px) {
   .heading {
     color: getColor(secondary);
@@ -205,7 +202,17 @@
 }
 
 /***************** OUR TEAM *****************/
-
+/***************** MOBILE *****************/
+.heading {
+  color: getColor(secondary);
+  font-weight: getFw(bold);
+  font-size: getFs(heading);
+  line-height: 1.16;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
 .team-background {
   padding-bottom: 108px;
   background-color: getColor(background-second);
@@ -219,8 +226,7 @@
   margin: 0px;
   &__card {
     background: getColor("white");
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 0 15px;
   }
@@ -241,7 +247,52 @@
     margin: 0px;
   }
 }
+
+/***************** TABLET *****************/
+
+@media screen and (min-width: 768px) {
+  .heading {
+    padding-top: 60px;
+  }
+
+  .team-background {
+    background-color: getColor(background-second);
+    padding-bottom: 60px;
+  }
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 15px;
+    padding: 0;
+    &__card {
+      flex-basis: calc((100% - 30px) / 2);
+      margin: 0;
+      padding: 0;
+    }
+    &__name {
+      color: getColor(secondary);
+      font-weight: getFw(normal-5);
+      font-size: getFs(normal2);
+      line-height: 1.19;
+      text-align: center;
+      padding: 30px 30px 16px;
+    }
+    &__role {
+      color: getColor(text);
+      font-weight: getFw(normal);
+      font-size: getFs(normal2);
+      line-height: 1.19;
+      padding-top: 10px;
+      margin: 0px;
+    }
+  }
+}
 /***************** OUR CUSTOMERS *****************/
+/***************** MOBILE *****************/
+
 .customers {
   display: flex;
   flex-wrap: wrap;

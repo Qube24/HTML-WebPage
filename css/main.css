@@ -28,7 +28,8 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 figure {
@@ -257,7 +258,8 @@ figure {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/***************** HEADER*****************/
+/***************** HEADER *****************/
+/***************** MOBILE *****************/
 @media screen and (min-width: 320px) {
   .header {
     display: -webkit-box;
@@ -271,7 +273,7 @@ figure {
             justify-content: space-between;
     padding: 10px 15px;
     border-bottom: 1px solid #ececec;
-    max-width: 100%;
+    max-width: 480px;
   }
   .header__menu {
     display: none;
@@ -280,21 +282,11 @@ figure {
     display: none;
   }
 }
+/***************** TABLET *****************/
 @media screen and (min-width: 768px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 93px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 0px 227px 0px 215px;
-    padding: 24px 0px 25px;
-    border-bottom: 1px solid #ececec;
+    padding: 10px 0px 10px 15px;
+    max-width: 768px;
   }
   .header__menu {
     display: -webkit-box;
@@ -303,8 +295,8 @@ figure {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 46px;
-    margin: 0;
+    gap: 60px;
+    margin: 0 101px 0 83px;
   }
   .header__link {
     position: relative;
@@ -337,14 +329,13 @@ figure {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-left: 252px;
-    -webkit-column-gap: 30px;
-       -moz-column-gap: 30px;
-            column-gap: 30px;
-    margin: 0;
+    gap: 10px;
+    margin: 11px 0;
   }
   .contact__mail-tel {
     display: -webkit-box;
@@ -355,7 +346,7 @@ figure {
             align-items: center;
     color: #757575;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     line-height: 1.2;
     fill: #757575;
@@ -462,12 +453,13 @@ figure {
   }
 }
 /***************** ORDER-HEADER *****************/
+/***************** MOBILE *****************/
 .order {
   text-align: center;
   height: 400px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/Mobile/WorkMobile.png");
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/Mobile/WorkMobile.png");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/WorkMobile.png");
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/WorkMobile.png");
 }
 .order__text {
   text-align: center;
@@ -482,12 +474,28 @@ figure {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .order {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/Mobile/WorkMobile@2x.png");
-    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/Mobile/WorkMobile@2x.png");
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/WorkMobile@2x.png");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/WorkMobile@2x.png");
     background-size: contain;
   }
 }
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .order {
+    background-size: contain;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/WorkT.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/WorkT.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .order {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/WorkT@2x.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/WorkT@2x.jpg");
+  }
+}
+/***************** DESKTOP *****************/
 /***************** OUR ADVANTAGES *****************/
+/***************** MOBILE *****************/
 .description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,65 +535,34 @@ figure {
   margin: 0px;
 }
 
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .description {
+    margin: 0px 15px;
+  }
+  .description__icon {
+    width: 354px;
+  }
+  .description__heading {
+    text-align: left;
+  }
+  .description__text {
+    width: 354px;
+    height: 75px;
+  }
+}
+/***************** DESKTOP *****************/
 /***************** OUR JOB *****************/
+/***************** MOBILE *****************/
 @media screen and (min-width: 320px) {
-  .heading {
-    color: #212121;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    padding-top: 12px;
-    padding-bottom: 30px;
-    margin: 0px;
+  .heading2 {
+    display: none;
   }
   .our-job {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .heading {
-    color: #212121;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    padding-bottom: 50px;
-    margin: 0px;
-  }
-  .our-job {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 30px;
-    margin: 0px;
-  }
-  .our-job__box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-  }
-  .our-job__text {
-    position: absolute;
-    bottom: 0%;
-    margin: 0;
-    width: 370px;
-    height: 70px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    background: rgba(47, 48, 58, 0.8);
-    padding-top: 27px;
-  }
-}
+/***************** DESKTOP *****************/
 @media screen and (min-width: 1200px) {
   .heading {
     color: #212121;
@@ -630,6 +607,18 @@ figure {
   }
 }
 /***************** OUR TEAM *****************/
+/***************** MOBILE *****************/
+.heading {
+  color: #212121;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  margin: 0px;
+}
+
 .team-background {
   padding-bottom: 108px;
   background-color: #f5f4fa;
@@ -672,7 +661,54 @@ figure {
   margin: 0px;
 }
 
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .heading {
+    padding-top: 60px;
+  }
+  .team-background {
+    background-color: #f5f4fa;
+    padding-bottom: 60px;
+  }
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+    margin: 0 15px;
+    padding: 0;
+  }
+  .team__card {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin: 0;
+    padding: 0;
+  }
+  .team__name {
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    padding: 30px 30px 16px;
+  }
+  .team__role {
+    color: #757575;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    padding-top: 10px;
+    margin: 0px;
+  }
+}
 /***************** OUR CUSTOMERS *****************/
+/***************** MOBILE *****************/
 .customers {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,6 +738,7 @@ figure {
 }
 
 /***************** PORTFOLIO *****************/
+/***************** MOBILE *****************/
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,7 +813,81 @@ figure {
   padding-top: 4px;
 }
 
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    margin: 60px 15px 0px;
+  }
+  .gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+    margin: 0;
+    padding: 0;
+  }
+  .gallery__overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .gallery__overlay--visible {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    margin: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    padding: 49px 25px 29px 24px;
+    letter-spacing: 0.03em;
+    line-height: 28px;
+    font-weight: 400;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .gallery__info:hover .gallery__overlay--visible {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .gallery__info:hover {
+    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+  }
+  .gallery__description {
+    font-weight: 700;
+    color: #212121;
+    font-size: 18px;
+    line-height: 2;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    padding: 20px 24px 20px 24px;
+  }
+  .gallery__class {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    color: #757575;
+    margin: 0px;
+    padding-top: 4px;
+  }
+}
 /***************** FOOTER *****************/
+/***************** MOBILE *****************/
 .footer {
   background-color: #2f303a;
   padding: 57px 0px 63px;
@@ -818,12 +929,13 @@ figure {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 9px;
+  gap: 8px;
   margin: 0;
 }
 .footer__adress {
   color: #ffffff;
   font-size: 14px;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.71;
   padding-top: 20px;
@@ -876,6 +988,38 @@ figure {
   fill: #ffffff;
 }
 
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 84px;
+  }
+  .footer__newsletter {
+    gap: 20px;
+    height: 156px;
+    width: 100%;
+  }
+  .footer__input {
+    width: 450px;
+  }
+}
 /***************** MODAL *****************/
 .backdrop {
   position: fixed;
@@ -1160,6 +1304,15 @@ figure {
   color: #000000;
 }
 
+/***************** TABLET *****************/
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-open {
+    display: none;
+  }
+}
 .filter__btn:hover, .filter__btn:focus, .customers__icon:hover, .customers__icon:focus, .gallery__overlay--visible, .footer__mail-tel:hover, .footer__mail-tel:focus {
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
