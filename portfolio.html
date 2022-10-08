@@ -53,6 +53,7 @@
         <svg><use width="40" height="40" href="./images/icon.svg#menu"></use></svg>
       </button>
     </header>
+
     <main>
       <section class="container section">
         <ul class="filter">
@@ -73,15 +74,22 @@
             <button class="filter__btn" type="button">Marketing</button>
           </li>
         </ul>
+
         <ul class="gallery">
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/technocrack.jpg"
-                  srcset="images/TechnocrackMobile.png 1x, images/TechnocrackMobile@2x.png 2x"
-                  alt="laptop"
-                />
+                <picture>
+                  <source
+                    srcset="images/TechnocrackT.jpg 1x, images/TechnocrackT@2x.jpg 2x"
+                    media="(min-width: 765px)"
+                  />
+                  <source
+                    srcset="images/TechnocrackMobile.jpg 1x, images/TechnocrackMobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="images/TechnocrackMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                   wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji
@@ -96,11 +104,14 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/grafika.jpg"
-                  srcset="images/GrafikaMobile.png 1x, images/GrafikaMobile@2x.png 2x"
-                  alt="koszykarze"
-                />
+                <picture>
+                  <source srcset="images/GrafikaT.jpg 1x, images/GrafikaT@2x.jpg 2x" media="(min-width: 765px)" />
+                  <source
+                    srcset="images/GrafikaMobile.jpg 1x, images/GrafikaMobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="images/GrafikaMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -116,11 +127,17 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/restauracja.jpg"
-                  srcset="images/RestauracjaMobile.png 1x, images/RestauracjaMobile@2x.png 2x"
-                  alt="logo restauracji"
-                />
+                <picture>
+                  <source
+                    srcset="images/RestauracjaT.jpg 1x, images/RestauracjaT@2x.jpg 2x"
+                    media="(min-width: 765px)"
+                  />
+                  <source
+                    srcset="images/RestauracjaMobile.jpg 1x, images/RestauracjaMobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="images/RestauracjaMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -136,11 +153,11 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/prime.jpg"
-                  srcset="images/PrimeMobile.png 1x, images/PrimeMobile@2x.png 2x"
-                  alt="słuchawki"
-                />
+                <picture>
+                  <source srcset="images/PrimeT.jpg 1x, images/PrimeT@2x.jpg 2x" media="(min-width: 765px)" />
+                  <source srcset="images/PrimeMobile.jpg 1x, images/PrimeMobile@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img src="images/PrimeMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -156,11 +173,11 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/boxes.jpg"
-                  srcset="images/BoxesMobile.png 1x, images/BoxesMobile@2x.png 2x"
-                  alt="pudełka"
-                />
+                <picture>
+                  <source srcset="images/BoxesT.jpg 1x, images/BoxesT@2x.jpg 2x" media="(min-width: 765px)" />
+                  <source srcset="images/BoxesMobile.jpg 1x, images/BoxesMobile@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img src="images/BoxesMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -176,11 +193,17 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/inspiration.jpg"
-                  srcset="images/InspirationMobile.png 1x, images/InspirationMobile@2x.png 2x"
-                  alt="monitor"
-                />
+                <picture>
+                  <source
+                    srcset="images/InspirationT.jpg 1x, images/InspirationT@2x.jpg 2x"
+                    media="(min-width: 765px)"
+                  />
+                  <source
+                    srcset="images/InspirationMobile.jpg 1x, images/InspirationMobilee@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="images/InspirationMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -196,11 +219,14 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/magazyn.jpg"
-                  srcset="images/MagazynMobile.png 1x, images/MagazynMobile@2x.png 2x"
-                  alt="ksiażka"
-                />
+                <picture>
+                  <source srcset="images/MagazynT.jpg 1x, images/MagazynT@2x.jpg 2x" media="(min-width: 765px)" />
+                  <source
+                    srcset="images/MagazynMobile.jpg 1x, images/MagazynMobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="images/MagazynMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -216,7 +242,11 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img src="images/lab.jpg" srcset="images/Lab.png 1x, images/Lab@2x.png 2x" alt="metka" />
+                <picture>
+                  <source srcset="images/LabT.jpg 1x, images/LabT@2x.jpg 2x" media="(min-width: 765px)" />
+                  <source srcset="images/LabMobile.jpg 1x, images/LabMobile@2x.jpg 2x" media="(min-width: 320px)" />
+                  <img src="images/LabMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,
@@ -232,11 +262,14 @@
           <li class="gallery__info">
             <figure>
               <div class="gallery__overlay">
-                <img
-                  src="images/growing.jpg"
-                  srcset="images/GrowingMobile.png 1x, images/GrowingMobile@2x.png 2x"
-                  alt="łapki na laptopie"
-                />
+                <picture>
+                  <source srcset="images/GrowingT.jpg 1x, images/GrowingT@2x.jpg 2x" media="(min-width: 765px)" />
+                  <source
+                    srcset="images/GrowingMobile.jpg 1x, images/GrowingMobile@2x.jpg 2x"
+                    media="(min-width: 320px)"
+                  />
+                  <img src="images/GrowingMobile.jpg" alt="laptop" />
+                </picture>
                 <p class="gallery__overlay--visible">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quaerat et mollitia suscipit hic
                   incidunt quis deserunt perspiciatis eum dolorum qui dolores dolorem debitis quidem enim similique,

@@ -63,6 +63,7 @@
 }
 
 /***************** TABLET *****************/
+
 @media screen and (min-width: 768px) {
   .filter {
     display: flex;
@@ -72,11 +73,14 @@
   }
   .gallery {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 30px;
-    flex-basis: calc((100% - 30px) / 2);
-    margin: 0;
+    margin: 30px 15px 0;
     padding: 0;
+    &__info {
+      flex-basis: calc((100% - 30px) / 2);
+    }
     &__overlay {
       position: relative;
       overflow: hidden;
