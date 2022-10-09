@@ -45,21 +45,12 @@
   }
 }
 
-// .footer__btn {
-//   @extend %button;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   align-self: flex-end;
-//   border: none;
-//   gap: 24px;
-//   margin: 0px;
-//   padding: 0px;
-//   &:hover,
-//   &:focus {
-//     cursor: pointer;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .footer__btn--flex {
+    margin-top: 30px;
+  }
+}
+
 /***************** BTN PORTFOLIO *****************/
 
 .filter__btn {
@@ -79,8 +70,7 @@
     background-color: getColor(primary);
     color: getColor("white");
     cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
 

@@ -7,18 +7,12 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    font-family: "Roboto", "Raleway", "arial", sans-serif;
-    color: getColor(text);
     width: 768px;
-    margin: 0px auto;
   }
 }
 @media screen and (min-width: 1200px) {
   body {
-    font-family: "Roboto", "Raleway", "arial", sans-serif;
-    color: getColor(text);
     width: 1600px;
-    margin: 0px auto;
   }
 }
 ul {
@@ -44,13 +38,11 @@ figure {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 .section {
@@ -120,6 +112,11 @@ figure {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__btn--flex {
+    margin-top: 30px;
+  }
+}
 /***************** BTN PORTFOLIO *****************/
 .filter__btn {
   background-color: #f5f4fa;
@@ -273,7 +270,7 @@ figure {
             justify-content: space-between;
     padding: 10px 15px;
     border-bottom: 1px solid #ececec;
-    max-width: 480px;
+    max-width: 100%;
   }
   .header__menu {
     display: none;
@@ -286,7 +283,6 @@ figure {
 @media screen and (min-width: 768px) {
   .header {
     padding: 10px 0px 10px 15px;
-    max-width: 768px;
   }
   .header__menu {
     display: -webkit-box;
@@ -359,70 +355,20 @@ figure {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
+/***************** DESKTOP *****************/
 @media screen and (min-width: 1200px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 93px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin: 0px 227px 0px 215px;
     padding: 24px 0px 25px;
-    border-bottom: 1px solid #ececec;
   }
   .header__menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 46px;
     margin: 0;
   }
-  .header__link {
-    position: relative;
-    text-decoration: none;
-    color: #212121;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-  }
-  .header__link--current {
-    color: #2196f3;
-    position: relative;
-  }
-  .header__link--current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 46px;
-    width: 53px;
-    height: 4px;
-    background: #2196f3;
-    border-radius: 2px;
-  }
-  .header__link:hover, .header__link:focus {
-    color: #2196f3;
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header__svg {
-    display: none;
-  }
   .contact {
-    display: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     padding-left: 252px;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
@@ -430,26 +376,7 @@ figure {
     margin: 0;
   }
   .contact__mail-tel {
-    display: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #757575;
-    font-weight: 500;
     font-size: 14px;
-    text-decoration: none;
-    line-height: 1.2;
-    fill: #757575;
-    gap: 10px;
-  }
-  .contact__mail-tel:hover, .contact__mail-tel:focus {
-    color: #2196f3;
-    fill: #2196f3;
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 /***************** ORDER-HEADER *****************/
@@ -460,6 +387,7 @@ figure {
   width: 100%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/WorkMobile.jpg");
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/WorkMobile.jpg");
+  background-size: contain;
 }
 .order__text {
   text-align: center;
@@ -469,7 +397,7 @@ figure {
   line-height: 1.36;
   padding-top: 118px;
   padding-bottom: 30px;
-  margin: 0px;
+  margin: 0;
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -482,7 +410,6 @@ figure {
 /***************** TABLET *****************/
 @media screen and (min-width: 768px) {
   .order {
-    background-size: contain;
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/WorkT.jpg");
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("/images/WorkT.jpg");
   }
@@ -494,6 +421,22 @@ figure {
   }
 }
 /***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .order {
+    background-size: cover;
+    height: auto;
+    padding: 200px 0px 200px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/work.jpg");
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/work.jpg");
+  }
+  .order__text {
+    font-weight: 900;
+    font-size: 44px;
+    color: #ffffff;
+    padding: 0 0 30px;
+    margin: 0;
+  }
+}
 /***************** OUR ADVANTAGES *****************/
 /***************** MOBILE *****************/
 .description {
@@ -508,6 +451,7 @@ figure {
       flex-wrap: wrap;
   gap: 30px;
   margin: 0px 15px 0px;
+  padding-top: 60px;
 }
 .description__icon {
   margin: 0;
@@ -518,7 +462,7 @@ figure {
 }
 .description__heading {
   text-align: center;
-  color: var(secondary);
+  color: #212121;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -552,6 +496,22 @@ figure {
   }
 }
 /***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .description {
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+  .description__icon {
+    width: 270px;
+  }
+  .description__heading {
+    padding-bottom: 10px;
+  }
+  .description__text {
+    width: 270px;
+    height: 75px;
+  }
+}
 /***************** OUR JOB *****************/
 /***************** MOBILE *****************/
 @media screen and (min-width: 320px) {
@@ -564,7 +524,13 @@ figure {
 }
 /***************** DESKTOP *****************/
 @media screen and (min-width: 1200px) {
-  .heading {
+  .heading2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: #212121;
     font-weight: 700;
     font-size: 36px;
@@ -667,20 +633,9 @@ figure {
     padding-top: 60px;
   }
   .team-background {
-    background-color: #f5f4fa;
     padding-bottom: 60px;
   }
   .team {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 30px;
     margin: 0 15px;
     padding: 0;
   }
@@ -690,20 +645,18 @@ figure {
     margin: 0;
     padding: 0;
   }
-  .team__name {
-    color: #212121;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    padding: 30px 30px 16px;
+}
+/***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .heading {
+    padding: 0 0 50px;
   }
-  .team__role {
-    color: #757575;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
-    padding-top: 10px;
+  .team-background {
+    padding-bottom: 94px;
+  }
+  .team {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     margin: 0px;
   }
 }
@@ -737,6 +690,16 @@ figure {
   cursor: pointer;
 }
 
+/***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .customers {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .customers__icon {
+    padding-left: 0;
+  }
+}
 /***************** PORTFOLIO *****************/
 /***************** MOBILE *****************/
 .filter {
@@ -816,81 +779,35 @@ figure {
 /***************** TABLET *****************/
 @media screen and (min-width: 768px) {
   .filter {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 8px;
-    margin: 60px 15px 0px;
   }
   .gallery {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 30px;
     margin: 30px 15px 0;
     padding: 0;
   }
+}
+/***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .filter {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 15px;
+  }
+  .gallery {
+    margin: 50px 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .gallery__info {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
-  }
-  .gallery__overlay {
-    position: relative;
-    overflow: hidden;
-  }
-  .gallery__overlay--visible {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(33, 150, 243, 0.9);
-    margin: 0px;
-    color: #ffffff;
-    font-size: 18px;
-    text-align: left;
-    padding: 49px 25px 29px 24px;
-    letter-spacing: 0.03em;
-    line-height: 28px;
-    font-weight: 400;
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .gallery__info:hover .gallery__overlay--visible {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  .gallery__info:hover {
-    -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
-  }
-  .gallery__description {
-    font-weight: 700;
-    color: #212121;
-    font-size: 18px;
-    line-height: 2;
-    background: #ffffff;
-    border: 1px solid #eeeeee;
-    padding: 20px 24px 20px 24px;
-  }
-  .gallery__class {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    color: #757575;
-    margin: 0px;
-    padding-top: 4px;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
 }
 /***************** FOOTER *****************/
@@ -1027,7 +944,103 @@ figure {
     width: 450px;
   }
 }
+/***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .footer__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 70px;
+  }
+  .footer__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0;
+  }
+  .footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    gap: 9px;
+    margin: 0;
+  }
+  .footer__adress {
+    color: #ffffff;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    padding-top: 20px;
+    margin: 0;
+  }
+  .footer__mail-tel {
+    color: #757575;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .footer__mail-tel:hover, .footer__mail-tel:focus {
+    color: #2196f3;
+    cursor: pointer;
+    -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer__join {
+    text-align: left;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+  }
+  .footer__newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 8px;
+  }
+  .footer__input {
+    width: 358px;
+    height: 50px;
+    left: 815px;
+    top: 2787px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 16px;
+    margin-right: 12px;
+    margin-left: 0;
+  }
+  .footer__svg {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+  }
+}
 /***************** MODAL *****************/
+/***************** MOBILE *****************/
 .backdrop {
   position: fixed;
   width: 100%;
@@ -1212,6 +1225,35 @@ figure {
   text-decoration: underline;
 }
 
+/***************** DESKTOP *****************/
+@media screen and (min-width: 1200px) {
+  .modal {
+    position: fixed;
+    max-width: 528px;
+    max-height: 581px;
+  }
+  .modal__text {
+    padding: 0px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form__label {
+    max-width: 448px;
+  }
+  .statute {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .statute__check {
+    left: -24px;
+  }
+}
 /***************** MOBILE MENU *****************/
 .menu {
   position: fixed;
@@ -1284,6 +1326,8 @@ figure {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .menu__link {
   text-decoration: none;

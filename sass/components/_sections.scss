@@ -6,6 +6,7 @@
   width: 100%;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
     url("/images/WorkMobile.jpg");
+  background-size: contain;
   &__text {
     text-align: center;
     font-weight: getFw(big);
@@ -14,7 +15,7 @@
     line-height: 1.36;
     padding-top: 118px;
     padding-bottom: 30px;
-    margin: 0px;
+    margin: 0;
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -27,7 +28,6 @@
 /***************** TABLET *****************/
 @media screen and (min-width: 768px) {
   .order {
-    background-size: contain;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
       url("/images/WorkT.jpg");
   }
@@ -40,24 +40,22 @@
 }
 
 /***************** DESKTOP *****************/
-
-// .order {
-//   width: 100%;
-//   text-align: center;
-//   padding: 200px 0px 200px;
-//   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-//     url("../images/work.jpg");
-//   &__text {
-//     text-align: center;
-//     font-weight: getFw(big);
-//     font-size: getFs(big);
-//     color: getColor("white");
-//     line-height: 1.36;
-//     padding-bottom: 30px;
-//     margin: 0px;
-//   }
-// }
-
+@media screen and (min-width: 1200px) {
+  .order {
+    background-size: cover;
+    height: auto;
+    padding: 200px 0px 200px;
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url("../images/work.jpg");
+    &__text {
+      font-weight: getFw(big);
+      font-size: getFs(big);
+      color: getColor("white");
+      padding: 0 0 30px;
+      margin: 0;
+    }
+  }
+}
 /***************** OUR ADVANTAGES *****************/
 /***************** MOBILE *****************/
 
@@ -68,6 +66,7 @@
   flex-wrap: wrap;
   gap: 30px;
   margin: 0px 15px 0px;
+  padding-top: 60px;
   &__icon {
     margin: 0;
     padding-top: 25px;
@@ -77,7 +76,7 @@
   }
   &__heading {
     text-align: center;
-    color: var(secondary);
+    color: getColor(secondary);
     font-weight: getFw(bold);
     font-size: getFs(normal);
     line-height: 1.14;
@@ -114,41 +113,22 @@
 }
 
 /***************** DESKTOP *****************/
-
-// .description {
-//   display: flex;
-//   text-align: center;
-//   justify-content: center;
-//   gap: 30px;
-//   margin: 0px 15px 0px;
-//   padding-bottom: 94px;
-//   &__icon {
-//     margin: 0;
-//     padding-top: 25px;
-//     width: 270px;
-//     height: 120px;
-//     background-color: getColor(background-second);
-//   }
-//   &__heading {
-//     text-align: left;
-//     color: var(secondary);
-//     font-weight: getFw(bold);
-//     font-size: getFs(normal);
-//     line-height: 1.14;
-
-//     padding-bottom: 10px;
-//     margin-top: 30px;
-//   }
-//   &__text {
-//     text-align: left;
-//     color: getColor(text);
-//     font-size: getFs(normal);
-//     font-weight: getFw(normal);
-//     line-height: 1.71;
-//     letter-spacing: 0.03em;
-//     margin: 0px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .description {
+    padding-top: 0;
+    padding-bottom: 94px;
+    &__icon {
+      width: 270px;
+    }
+    &__heading {
+      padding-bottom: 10px;
+    }
+    &__text {
+      width: 270px;
+      height: 75px;
+    }
+  }
+}
 
 /***************** OUR JOB *****************/
 /***************** MOBILE *****************/
@@ -164,7 +144,9 @@
 /***************** DESKTOP *****************/
 
 @media screen and (min-width: 1200px) {
-  .heading {
+  .heading2 {
+    display: flex;
+    justify-content: center;
     color: getColor(secondary);
     font-weight: getFw(bold);
     font-size: getFs(heading);
@@ -256,15 +238,9 @@
   }
 
   .team-background {
-    background-color: getColor(background-second);
     padding-bottom: 60px;
   }
   .team {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
     margin: 0 15px;
     padding: 0;
     &__card {
@@ -272,24 +248,24 @@
       margin: 0;
       padding: 0;
     }
-    &__name {
-      color: getColor(secondary);
-      font-weight: getFw(normal-5);
-      font-size: getFs(normal2);
-      line-height: 1.19;
-      text-align: center;
-      padding: 30px 30px 16px;
-    }
-    &__role {
-      color: getColor(text);
-      font-weight: getFw(normal);
-      font-size: getFs(normal2);
-      line-height: 1.19;
-      padding-top: 10px;
-      margin: 0px;
-    }
   }
 }
+
+/***************** DESKTOP *****************/
+
+@media screen and (min-width: 1200px) {
+  .heading {
+    padding: 0 0 50px;
+  }
+  .team-background {
+    padding-bottom: 94px;
+  }
+  .team {
+    flex-wrap: nowrap;
+    margin: 0px;
+  }
+}
+
 /***************** OUR CUSTOMERS *****************/
 /***************** MOBILE *****************/
 
@@ -316,24 +292,13 @@
   }
 }
 
-// .customers {
-//   display: flex;
-//   text-align: center;
-//   justify-content: center;
-//   gap: 30px;
-//   &__icon {
-//     max-width: 210px;
-//     height: 92px;
-//     align-items: center;
-//     border-radius: 4px;
-//     border: 1px solid getColor(icons);
-//     fill: getColor(icons);
-//     &:hover,
-//     &:focus {
-//       fill: getColor(primary);
-//       border: 1px solid getColor(primary);
-//       cursor: pointer;
-//       @extend %transition;
-//     }
-//   }
-// }
+/***************** DESKTOP *****************/
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    flex-wrap: nowrap;
+    &__icon {
+      padding-left: 0;
+    }
+  }
+}
