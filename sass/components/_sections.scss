@@ -1,28 +1,30 @@
 /***************** ORDER-HEADER *****************/
 /***************** MOBILE *****************/
-.order {
-  text-align: center;
-  height: 400px;
-  width: 100%;
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-    url("/images/WorkMobile.jpg");
-  background-size: contain;
-  &__text {
-    text-align: center;
-    font-weight: getFw(big);
-    font-size: getFs(logo);
-    color: getColor("white");
-    line-height: 1.36;
-    padding-top: 118px;
-    padding-bottom: 30px;
-    margin: 0;
-  }
-}
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 320px) {
   .order {
+    text-align: center;
+    height: 400px;
+    width: 100%;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-      url("/images/WorkMobile@2x.jpg");
+      url("file:///C:/Users/Kuba/Desktop/GoIT/HTML/goit-markup-hw-08/images/WorkMobile.jpg");
     background-size: contain;
+    &__text {
+      text-align: center;
+      font-weight: getFw(big);
+      font-size: getFs(logo);
+      color: getColor("white");
+      line-height: 1.36;
+      padding-top: 118px;
+      padding-bottom: 30px;
+      margin: 0;
+    }
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .order {
+      background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+        url("file:///C:/Users/Kuba/Desktop/GoIT/HTML/goit-markup-hw-08/images/WorkMobile.jpg");
+      background-size: contain;
+    }
   }
 }
 /***************** TABLET *****************/
