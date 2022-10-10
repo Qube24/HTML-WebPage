@@ -6,7 +6,7 @@
     height: 400px;
     width: 100%;
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-      url("file:///C:/Users/Kuba/Desktop/GoIT/HTML/goit-markup-hw-08/images/WorkMobile.jpg");
+      url("/images/WorkMobile.jpg");
     background-size: contain;
     &__text {
       text-align: center;
@@ -22,7 +22,7 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     .order {
       background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-        url("file:///C:/Users/Kuba/Desktop/GoIT/HTML/goit-markup-hw-08/images/WorkMobile.jpg");
+        url("/images/WorkMobile@2x.jpg");
       background-size: contain;
     }
   }
